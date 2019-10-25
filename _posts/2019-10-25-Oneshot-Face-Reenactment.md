@@ -19,8 +19,10 @@ comments: true
 
 #### - Face Reenactment의 조건을 설명함
 
-a. Photo-realistic face 
+a. Photo-realistic face
+
 b. pose & expression Seqeunce를 자연스럽게 만들어야함
+
 c. One shot or Few shot으로
 
 #### - Problem setting
