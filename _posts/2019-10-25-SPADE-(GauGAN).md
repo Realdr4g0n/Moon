@@ -21,17 +21,20 @@ SPatially-Adaptive-DEnormalization
 - Image synthesis할 때, Semantic segmentation을 포함한 상황이라는 특정 상황에 관심이 있었다고 한다.
 - 이런 task를 할 때 정규화 레이어들이 Sementic mask들의 정보를 "Wash away"하는 경향이 있다는 문제를 발견하고 이를 해결하고자 함.
 - 지금 이해하기로는 기존에 있던 Sementic mask에 새로운 Sementic mask가 들어오면 기존 정보를 씻어버리고 새로 써내려간다 그렇게되면 주변 입력과는 상관없이 자연스럽지 못하게 되어버린다.
-* * *
+
+
 ## 2. RW는 생략
-* * *
+
+
 ## 3. Sementic Image Synthesis
 <center><img src="/images/SPADE/2.png"> </img></center>
 - semantic segmentation mask 을 나타냄
 - L은 sementic label(river, mountain, water, tree ...)
 - H,W은 height width
 
+
 ### a. SPatially-Adaptive DEnomalization(SPADE)
-<center><img src="/images/SPADE/3.png"> </img><center>
+<center><img src="/images/SPADE/3.png"> <center>
     
 - h^i는 Convolution레이어 중 i번째 레이어에 N개의 batch sample이 주어지면 되는 활성화 값
 
@@ -39,7 +42,7 @@ SPatially-Adaptive-DEnormalization
 
 - 평균(μ)에 표준편차(σ)로 나눈 값에 정규화 된 레이어에서 학습된 weight값을(감마,베타) 곱하고 더해주는게 SPADE
 
-<center><img src="/images/SPADE/4.png"> </img><center>
+<center><img src="/images/SPADE/4.png"> <center>
     
 - 각 c(channel),y(height),x(width)에서 scaling과 bias 값을 나타내는 평균,표준편차
 
