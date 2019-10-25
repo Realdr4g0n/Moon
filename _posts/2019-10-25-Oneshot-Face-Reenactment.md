@@ -1,3 +1,19 @@
+---
+layout: post
+title:  "One-shot Face Reenactment"
+date:   2019-10-25
+excerpt: "One-shot Face Reenactment review"
+tag:
+- Deeplearning
+- GAN 
+- GenerativeAdversarialNetwork
+- GauGAN
+- SPADE
+- SPatially-Adaptive-DEnormalization
+comments: true
+---
+[paper](https://arxiv.org/abs/1908.03251)
+[code](https://github.com/bj80heyue/One_Shot_Face_Reenactment)
 ## 1. Introduction
 
 #### - Face Reenactment의 조건을 설명함
