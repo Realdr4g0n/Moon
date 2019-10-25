@@ -16,6 +16,7 @@ comments: true
 [[paper]](https://arxiv.org/abs/1903.07291)
 
 [[code]](https://github.com/NVlabs/SPADE)
+
 SPatially-Adaptive-DEnormalization
 ==================================
 
