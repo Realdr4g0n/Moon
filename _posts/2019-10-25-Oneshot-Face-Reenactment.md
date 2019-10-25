@@ -114,10 +114,11 @@ c. natural gap이 test와 training사이에 존재함. 이유는 training과 tes
 <center><img src="/images/One-shot Face Reenactment/7.png"></center>
 
 - 사용한 metric은 3가지 
-
-    . [Facial Action Unit consistency(AU)](https://arxiv.org/pdf/1808.03457.pdf)
-    . Head Pose Consistency : Head pose Estimator를 학습해서 평가했다는데, 레퍼런스도 없고 알 길이 없다.
-    . [Identity Preserving](https://arxiv.org/abs/1704.06904) : 다음 모델을 학습해서 Perceptual loss를 대신해서 사용했다고 함. 
+    - [Facial Action Unit consistency(AU)](https://arxiv.org/pdf/1808.03457.pdf)
+    
+    - Head Pose Consistency : Head pose Estimator를 학습해서 평가했다는데, 레퍼런스도 없고 알 길이 없다.
+    
+    - [Identity Preserving](https://arxiv.org/abs/1704.06904) : 다음 모델을 학습해서 Perceptual loss를 대신해서 사용했다고 함. 
 
 - 완전 커스터마이즈 해서 한듯... 이래도 되남?
 - 참고만 하는정도로 metric만 알아갑니다.
