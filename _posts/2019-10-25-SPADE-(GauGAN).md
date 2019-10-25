@@ -27,7 +27,7 @@ SPatially-Adaptive-DEnormalization
 
 
 ## 3. Sementic Image Synthesis
-<img src="/images/SPADE/2.png">
+<center><img src="/images/SPADE/2.png"></center>
     
 - semantic segmentation mask 을 나타냄
 
@@ -37,7 +37,7 @@ SPatially-Adaptive-DEnormalization
 
 
 ### a. SPatially-Adaptive DEnomalization(SPADE)
-<img src="/images/SPADE/3.png">
+<center><img src="/images/SPADE/3.png"></center>
     
 - h^i는 Convolution레이어 중 i번째 레이어에 N개의 batch sample이 주어지면 되는 활성화 값
 
@@ -45,7 +45,7 @@ SPatially-Adaptive-DEnormalization
 
 - 평균(μ)에 표준편차(σ)로 나눈 값에 정규화 된 레이어에서 학습된 weight값을(감마,베타) 곱하고 더해주는게 SPADE
 
-<img src="/images/SPADE/4.png"> 
+<center><img src="/images/SPADE/4.png"> </center>
     
 - 각 c(channel),y(height),x(width)에서 scaling과 bias 값을 나타내는 평균,표준편차
 
@@ -59,7 +59,7 @@ SPatially-Adaptive-DEnormalization
 - 어찌보면 SPADE는 자연스럽게만 해주는 것인듯, 자연스럽게 만든다면 그것 자체가 Photo realistic함
 
 ### b. SPADE Generator
-<img src="/images/SPADE/3.png"> 
+<center><img src="/images/SPADE/3.png"> </center>
 
 - 처음 입력(우측그림 맨 앞)시에는 Segment information이 필요하지 않다.
 
