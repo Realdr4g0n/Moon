@@ -75,14 +75,14 @@ SPatially-Adaptive-DEnormalization
 
 - 기존에 특정 sementation mask로 모든 픽셀을 도배하고 다른 균일 한 값을 가진 레이블로 올리면 기존 정보가 wash away하기 때문에 정규화 된 활성화 값이 모두 0이된다. (보전 X)
 
-** - 즉, 정리하자면 SPADE를 이용한 방법들은 기존 Normalization을 이용하는 이유인 "적응(Adaptive)"에 키워드를 맞추고 "부분적으로 적응시키며" -> "어색함을 야기하는 Wash Away를 보완" **
+- **즉, 정리하자면 SPADE를 이용한 방법들은 기존 Normalization을 이용하는 이유인 "적응(Adaptive)"에 키워드를 맞추고 "부분적으로 적응시키며" -> "어색함을 야기하는 Wash Away를 보완"**
 
 ### d. Multi-modal synthesis
 - Multi-modal인 이유는 real image와 이게 없을경우 random vector로 그냥 처리할 수 있기 때문이다.
 
 - real-image의 경우 Encoder에서 generator로 convolution을 진행한 뒤 넘겨주고(코드에서 확인), random vector 의 경우 그냥 들어감
 
-* * *
+
 
 ## 4. Experiments (Metric 위주로) 
 
