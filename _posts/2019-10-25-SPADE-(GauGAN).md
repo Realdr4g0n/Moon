@@ -30,7 +30,7 @@ SPatially-Adaptive-DEnormalization
 - L은 sementic label(river, mountain, water, tree ...)
 - H,W은 height width
 
-#    a. SPatially-Adaptive DEnomalization(SPADE)
+### a. SPatially-Adaptive DEnomalization(SPADE)
 <center><img src="/images/SPADE/3.png"> </img><center>
     
 - h^i는 Convolution레이어 중 i번째 레이어에 N개의 batch sample이 주어지면 되는 활성화 값
@@ -52,7 +52,7 @@ SPatially-Adaptive-DEnormalization
 
 - 어찌보면 SPADE는 자연스럽게만 해주는 것인듯, 자연스럽게 만든다면 그것 자체가 Photo realistic함
 
-#    b. SPADE Generator
+### b. SPADE Generator
 <center><img src="/images/SPADE/3.png"> </img><center>
 
 - 처음 입력(우측그림 맨 앞)시에는 Segment information이 필요하지 않다.
@@ -61,7 +61,7 @@ SPatially-Adaptive-DEnormalization
 
 - Pix2PixHD의 기법인 Multi-scale-Discriminator를 사용했고, 전체적 loss function또한 Pix2PixHD의 기법을 대부분 가져옴.
 
-#    c. Why dose SPADE work better?
+### c. Why dose SPADE work better?
     
 - 일반 nomalize layer보다 더 기존의 sementic 정보들을 보전을 잘하기 때문
 
@@ -71,7 +71,7 @@ SPatially-Adaptive-DEnormalization
 
 **- 즉, 정리하자면 SPADE를 이용한 방법들은 기존 Normalization을 이용하는 이유인 "적응(Adaptive)"에 키워드를 맞추고 "부분적으로 적응시키며" -> "어색함을 야기하는 Wash Away를 보완"**
 
-    # d. Multi-modal synthesis
+### d. Multi-modal synthesis
 - Multi-modal인 이유는 real image와 이게 없을경우 random vector로 그냥 처리할 수 있기 때문이다.
 
 - real-image의 경우 Encoder에서 generator로 convolution을 진행한 뒤 넘겨주고(코드에서 확인), random vector 의 경우 그냥 들어감
@@ -80,8 +80,8 @@ SPatially-Adaptive-DEnormalization
 
 ## 4. Experiments (Metric 위주로) 
 
-#   a. Dataset은 생략
-#   b. Performance Metrics
+### a. Dataset은 생략
+### b. Performance Metrics
 
 i. mIoU(mean Intersection-over-Union) 
 - 잘 만들어진 sementic segmentation의 출력은 GT의 라벨에 맞게 생성된다(뭔말?) 
