@@ -12,8 +12,9 @@ tag:
 - SPatially-Adaptive-DEnormalization
 comments: true
 ---
-[paper](https://arxiv.org/abs/1908.03251)
-[code](https://github.com/bj80heyue/One_Shot_Face_Reenactment)
+[[paper]](https://arxiv.org/abs/1908.03251)
+
+[[code]](https://github.com/bj80heyue/One_Shot_Face_Reenactment)
 ## 1. Introduction
 
 #### - Face Reenactment의 조건을 설명함
