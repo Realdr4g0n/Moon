@@ -27,9 +27,12 @@ SPatially-Adaptive-DEnormalization
 
 
 ## 3. Sementic Image Synthesis
-<center><img src="/images/SPADE/2.png"> </img></center>
+<center><img src="/images/SPADE/2.png"><center>
+    
 - semantic segmentation mask 을 나타냄
+
 - L은 sementic label(river, mountain, water, tree ...)
+
 - H,W은 height width
 
 
